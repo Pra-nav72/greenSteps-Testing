@@ -1,0 +1,1 @@
+console.log("Sustainable Habit Tracker ready! 🌱");
