@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Habit</title>
+</head>
+<body>
+    <h2>Add a Sustainable Habit 🌿</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Habit Name" required>
+        <textarea name="description" placeholder="Why is it important?"></textarea>
+        <button class="btn" type="submit">Save Habit</button>
+    </form>
+</body>
+</html>

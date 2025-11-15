@@ -205,3 +205,79 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ==========================================================
+# PYTHON / DJANGO PROJECT IGNORE FILE
+# Sustainable Habit Tracker
+# ==========================================================
+
+# ---------------------
+# Python cache files
+# ---------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ---------------------
+# Virtual Environment
+# ---------------------
+venv/
+env/
+.venv/
+ENV/
+
+# ---------------------
+# Django specific files
+# ---------------------
+
+# Database (local only)
+db.sqlite3
+
+# Migrations cache (migration files should be committed, not cache)
+*/migrations/__pycache__/
+
+# Static files (auto-generated during production)
+staticfiles/
+
+# Media uploads (optional)
+media/
+
+# Django logs
+*.log
+
+# ---------------------
+# Environment variables / Secrets
+# ---------------------
+.env
+*.env
+.env.local
+
+# ---------------------
+# Editor / IDE settings
+# ---------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------------------
+# OS-specific files
+# ---------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Linux trash
+.Trash-*
+
+# ---------------------
+# Node / JavaScript (if you add front-end tools later)
+# ---------------------
+node_modules/
+npm-debug.log
+yarn-error.log

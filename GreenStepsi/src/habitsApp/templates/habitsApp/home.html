@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sustainable Habit Tracker</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Sustainable Habit Tracker 🌱</h1>
+
+    <a class="btn" href="/add">➕ Add New Habit</a>
+
+    <div class="habit-list">
+        {% for habit in habits %}
+        <div class="habit-card">
+            <h3>{{ habit.name }}</h3>
+            <p>{{ habit.description }}</p>
+
+            <form method="POST" action="/toggle/{{ habit.id }}/">
+                {% csrf_token %}
+                <button class="toggle-btn">
+                    {% if habit.is_completed_today %}
+                        ✔ Completed Today
+                    {% else %}
+                        Mark as Done
+                    {% endif %}
+                </button>
+            </form>
+        </div>
+        {% endfor %}
+    </div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
